@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.elawafelek.courtcounter.MainActivity">
+
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.elawafelek.courtcounter.MainActivity">
+
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/team_a"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/three_point_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="+3 POINTS"
+            android:onClick="submit_3points"
+            />
+
+        <Button
+            android:id="@+id/two_point_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="+2 POINTS"
+            android:onClick="submit_2points"
+            />
+
+        <Button
+            android:id="@+id/free_throw_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="FREE THROW"
+            android:onClick="submit_FreeThrow"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.elawafelek.courtcounter.MainActivity">
+
+        <TextView
+            android:id="@+id/team_nameB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Team B"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/team_a_scoreB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/three_point_buttonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="+3 POINTS"
+            android:onClick="submit_3points"
+            />
+
+        <Button
+            android:id="@+id/two_point_buttonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="+2 POINTS"
+            android:onClick="submit_2points"
+            />
+
+        <Button
+            android:id="@+id/free_throw_buttonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="FREE THROW"
+            android:onClick="submit_FreeThrow"
+            />
+
+    </LinearLayout>
+</LinearLayout>
